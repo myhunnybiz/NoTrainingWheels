@@ -52,6 +52,7 @@ img {
 
 nav ul {
     display: none;
+    text-transform: uppercase;
 }
 
 .logo {
