@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+body {
+    font-family: 'Montserrat';
+    color: #999999;
+}
+a {
+    text-decoration: none;
+    color: #999999;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    width: 100%;
+}
+
+.container {
+    width: 80%;
+    max-width: 1180px;
+    margin: auto;
+}
+
+.btn {
+    cursor: pointer;
+    border: 1px solid black;
+    color: black;
+    padding: .5rem 1rem;
+    display: inline-block;
+    border-radius: 4px;
+}
+
+.btn:hover {
+    opacity: .5;
+}
+
+/* Navigation */
+.menu-btn {
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 30px;
+}
+
+nav ul {
+    display: none;
+}
+
+.logo {
+    color: #000;
+    font-weight: bold;
+}
+
+
+/* Showcase */
+
+.showcase-image {
+    background: url(https://source.unsplash.com/weekly?interior);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 400px;
+}
+
+.content {
+    display: flex;
+    height: 200px;
+    align-items: center;
+    text-align: center;
+    justify-content: space-evenly;
+    font-weight: bold;
+}
+
+/* Cards */
+
+.cards {
+    border-top: .5px solid #707070;
+    border-bottom: .5px solid #707070;
+    padding: 3rem 0;
+}
+
+.card {
+    margin-bottom: 1.5rem;
+}
+
+.cards p {
+    line-height: 1.7;
+}
+
+.cards h3, .cards img, .cards p, .cards .btn {
+    margin-bottom: 1.5rem;
+}
+
+
+/* Instagram */
+.instagram {
+    padding: 3rem 0 0 0;
+    text-align: center;
+}
+
+.instagram h2 {
+    font-weight: normal;
+    margin-bottom: 2rem;
+}
+
+.main-instagram {
+    margin-bottom: 1.5rem;
+}
+
+.instagram-images {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+/* Footer */
+
+footer {
+   padding: 20px;
+   border-top: .5px solid #707070;
+   font-size: 1.5rem;
+}
+
+footer ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+footer ul li {
+    padding: 0 2rem;
+}
+
+@media(min-width: 600px) {
+    .menu-btn {
+        display: none;
+    }
+
+    nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 60px;
+        padding: 20px 0;
+        margin: auto;
+    } 
+    nav ul {
+        display: flex;
+        align-items: center;
+    }
+    
+    nav ul li {
+        padding: 0 10px;
+    }
+
+    .showcase-image {
+        background: url(https://source.unsplash.com/weekly?interior);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 700px;
+    }
+
+    .instagram-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 2rem;
+        padding: 3rem 0;
+    }
+}
+
+@media (min-width: 900px) {
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 1.2rem;
+        border-top: .5px solid #707070;
+        border-bottom: .5px solid #707070;
+        padding: 3rem 0;
+    }    
+
+}
